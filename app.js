@@ -12,7 +12,8 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
   require("dotenv").config({ path: "config/config.env" });
 }
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: true,
+  //origin: "http://localhost:3000",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
